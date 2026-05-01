@@ -17,6 +17,17 @@
   font-weight: 700;
   text-align: center;
   text-shadow: 0 0 15px rgba(0,0,0,0.6);
+  position: relative;
+}
+.card i{
+  position: absolute;
+  left: 45px;
+  font-size: 23px;
+  color: grey;
+  transition: 0.3s;
+}
+.card i:hover{
+  transform: scale(1.05);
 }
 .card h2 {
   font-size: 28px;

@@ -1,3 +1,12 @@
-.deuses{
-    font-size: 22px;
+.formulario select {
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: rgb(141, 136, 136);
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+}
+.formulario option{
+    background: #1e1e1e;
+    color: white;
 }
