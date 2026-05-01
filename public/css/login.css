@@ -1,0 +1,68 @@
+.header .container {
+  justify-content: center;
+  height: 50px
+}
+.header .container:hover{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+}
+.header .titulo .inicial{
+  font-size: 32px;
+}
+.card{
+  background: rgba(20, 40, 80, 0.35);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.1);
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+.card h2 {
+  font-size: 28px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.card {
+  width: 420px;
+  padding: 30px;
+  background: rgba(10, 30, 60, 0.45);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.1);
+  color: #EAEAEA;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.formulario input {
+  border: 1px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.1);
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+}
+.botao {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  background: #1e90ff;
+  transition: 0.3s;
+}
+.botao:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 150, 255, 0.6);
+}
+.nova{
+  font-size: 15px;
+  color: #B0BEC5;
+  transition: 0.3s;
+}
+.nova a{
+  color: #B0BEC5;
+}

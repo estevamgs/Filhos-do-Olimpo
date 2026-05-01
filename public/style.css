@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial;
+}
+
+/* HEADER */
+header {
+  position: absolute; /* fica sobre o banner */
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 10;
+}
+
+/* LOGO */
+.titulo a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #F5F5F5;
+  font-size: 28px;
+}
+
+.bolt img {
+  width: 28px;
+}
+
+/* MENU */
+nav a {
+  color: white;
+  margin-left: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  position: relative;
+}
+
+/* efeito underline animado */
+nav a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0%;
+  height: 2px;
+  background: #FFD700;
+  transition: 0.3s;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* BANNER */
+.banner {
+  height: 100vh;
+  background: url("./assets/imgs/banner.jpg") center / cover no-repeat;
+  position: relative;
+}
+
+/* OVERLAY */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  text-align: center;
+}
+
+.overlay h2 {
+  font-size: 40px;
+}
+
+.overlay p {
+  margin-top: 10px;
+  font-size: 18px;
+}
