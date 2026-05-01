@@ -1,19 +1,20 @@
 var express = require("express");
 var router = express.Router();
 
-var divindadesController = require("../controllers/divindadesController");
+var deusesController = require("../controllers/deusesController");
 
 //Recebendo os dados do html e direcionando para a função cadastrar de usuarioController.js
-router.post("/cadastrar", function (req, res) {
-    divindadesController.cadastrar(req, res);
-})
+
+router.get("/buscar", function (req, res) {
+    deusesController.buscarPorCodigo(req, res);
+});
 
 router.get("/buscar/:id", function (req, res) {
-  divindadesController.buscarPorId(req, res);
+  deusesController.buscarPorId(req, res);
 });
 
 router.get("/listar", function (req, res) {
-  divindadesController.listar(req, res);
+  deusesController.listar(req, res);
 });
 
 module.exports = router;

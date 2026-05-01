@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
-<body onload="listar()">
+<body>
   <!--header inicio-->
   <div class="header transparente">
       <div class="container">
@@ -58,9 +58,9 @@
             <span>Filho de qual Divindade?</span>
             <br>
             <select id="sel_deuses">
-              <option>Poseidon 🔱</option>
-              <option>Hades 💀</option>
-              <option>Zeus⚡</option>
+              <option value='1'>Poseidon 🔱</option>
+              <option value='2'>Hades 💀</option>
+              <option value='3'>Zeus⚡</option>
             </select>
           </div>
           <div class="campo">
@@ -98,8 +98,6 @@
 </html>
 <script>
   // Array para armazenar empresas cadastradas para validação de código de ativação 
-  let divindades = ["Poseidon 🔱", "Hades 💀", "Zeus⚡"];
-
   function cadastrar() {
     // aguardar();
     //Recupere o valor da nova input pelo nome do id
@@ -134,11 +132,10 @@
       body: JSON.stringify({
         // crie um atributo que recebe o valor recuperado aqui
         // Agora vá para o arquivo routes/usuario.js
-        nomeServer: nomeVar,
-        emailServer: emailVar,
-        deusesServer: deusesVar,
-        senhaServer: senhaVar,
-        deusesVincularServer: deusesVincular
+        nome: nomeVar,
+        email: emailVar,
+        fk_deuses: Number(deusesVar),
+        senha: senhaVar
       }),
     })
       .then(function (resposta) {
@@ -167,27 +164,7 @@
 
     return false;
   }
-
   // Listando empresas cadastradas 
-  function listar() {
-    fetch("/divindades/listar", {
-      method: "GET",
-    })
-      .then(function (resposta) {
-        resposta.json().then((deuses) => {
-          deuses.forEach((divindades) => {
-            deusesCadastradas.push(deuses);
-
-            console.log("divindades")
-            console.log(divindades[0].codigo_ativacao)
-          });
-        });
-      })
-      .catch(function (resposta) {
-        console.log(`#ERRO: ${resposta}`);
-      });
-  }
-
   function sumirMensagem() {
     cardErro.style.display = "none";
   }
