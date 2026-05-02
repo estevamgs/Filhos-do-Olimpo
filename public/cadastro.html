@@ -86,14 +86,6 @@
       </div>
     </div>
   </div>
-  <!--footer inicio-->
-  <div class="footer">
-    <div class="container">
-      <h4>Feito com amor por aluno &hearts; SPTech &copy; 2023</h4>
-      <span class="version">v1.0.0</span>
-    </div>
-  </div>
-  <!--footer fim-->
 </body>
 </html>
 <script>
@@ -123,6 +115,39 @@
     } else {
       setInterval(sumirMensagem, 5000);
     }
+
+     for (let i = 0; i < 1; i++) {
+        if (nomeVar.length <= 1) {
+          cardErro.style.display = "block";
+          mensagem_erro.innerHTML = "(Nome deve conter mais que 1 caracter)";
+          finalizarAguardar();
+          return;
+        }
+      }
+     for (let i = 0; i < 1; i++) {
+        if(!(emailVar.includes('@') && emailVar.includes('.'))) {
+          cardErro.style.display = "block";
+          mensagem_erro.innerHTML = "(E-Mail deve conter '@' e '.')";
+          finalizarAguardar();
+          return;
+        }
+      }
+      for (let i = 0; i < 1; i++) {
+        if (senhaVar.length <= 6) {
+          cardErro.style.display = "block";
+          mensagem_erro.innerHTML = "(Senha deve conter mais do que 6 caracteres)";
+          finalizarAguardar();
+          return;
+        }
+      }
+      for (let i = 0; i < 1; i++) {
+        if (confirmacaoSenhaVar != senhaVar) {
+          cardErro.style.display = "block";
+          mensagem_erro.innerHTML = "(As senhas devem coincidir)";
+          finalizarAguardar();
+          return;
+        }
+      }
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
       method: "POST",
