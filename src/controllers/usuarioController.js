@@ -19,7 +19,7 @@ function autenticar(req, res) {
                         res.json({
                             id: resultadoAutenticar[0].id,
                             email: resultadoAutenticar[0].email,
-                            deuses: resultadoAutenticar[0].deuses,
+                            fk_deuses: resultadoAutenticar[0].fk_deuses,
                             nome: resultadoAutenticar[0].nome,
                             senha: resultadoAutenticar[0].senha
                         });
@@ -69,6 +69,7 @@ function cadastrar(req, res) {
             );
     }
 }
+
 
 module.exports = {
     autenticar,

@@ -115,6 +115,7 @@
                     sessionStorage.EMAIL_USUARIO = json.email;
                     sessionStorage.NOME_USUARIO = json.nome;
                     sessionStorage.ID_USUARIO = json.id;
+                    sessionStorage.DEUS_USUARIO = json.fk_deuses;
 
                     setTimeout(function () {
                         window.location = "./index.html";
@@ -142,5 +143,8 @@
     function sumirMensagem() {
         cardErro.style.display = "none"
     }
+    // sessionStorage.NOME_USUARIO = json.nome;
+    // sessionStorage.ID_USUARIO = json.id;
+    // sessionStorage.DEUS_USUARIO = json.fk_deuses;
 
 </script>

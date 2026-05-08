@@ -29,31 +29,62 @@
           <li>
             <a href="index.html">Início</a>
           </li>
-          <li> </i>
-          <li>
-            <a href="##">Acampamento Meio-Sangue</a>
-          </li>
-          <li> </li>
             <li>
               <a href="##">Personagens</a>
             </li>
-            <li> </li>
             <li>
               <a href="##">Deuses</a>
             </li>
           <li>|</li>
-          <li> </li>
+          
           <li>
-            <a href="login.html">Login</a>
+            <a id="loginBtn" href="login.html">Login</a>
           </li>
         </ul>
       </div>
     </div>
     <div class="banner">
       <div class="container">
-        <p>Seja Bem vindo <span>Semi-deus.</span><br> Filho de <span>Poseidon, deus dos mares</span>.</p>
+        <p>Seja Bem vindo <span id="tituloUsuario">Semi-deus.</span><br> <span id="fraseContainer">Filho de <span id="fraseDeus">Poseidon, deus dos mares</span></span></p>
       </div>
     </div>
     <script src="./js/transicao.js"></script>
   </body>
 </html>
+<script>
+  window.onload = function(){
+  let nomeUsuario = sessionStorage.NOME_USUARIO;
+  let deusUsuario = Number(sessionStorage.DEUS_USUARIO);
+
+  if(nomeUsuario){
+    document.getElementById("tituloUsuario").innerHTML = nomeUsuario;
+
+    let loginBtn = document.getElementById("loginBtn");
+    loginBtn.innerHTML = "Sair";
+    loginBtn.href = "#";
+    loginBtn.onclick = function(){
+      sessionStorage.clear();
+      window.location = "./login.html";
+    };
+
+    const deuses = {
+      1: "Poseidon, o Deus dos Mares",
+      2: "Hades, o Senhor do Submundo",
+      3: "Zeus, o Deus dos Raios"
+    };
+
+    document.getElementById("fraseDeus").innerHTML = deuses[deusUsuario];
+    document.getElementById("fraseContainer").style.display = "inline";
+
+    if(deusUsuario === 1){
+      document.body.classList.add("poseidon");
+    } else if(deusUsuario === 2){
+      document.body.classList.add("hades");
+    } else if(deusUsuario === 3){
+      document.body.classList.add("zeus");
+    }
+  } else {
+    document.getElementById("fraseContainer").style.display = "none";
+  }
+}
+</script>

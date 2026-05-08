@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Filhos do Olimpo | Cadastro</title>
-    <script src="./js/sessao.js"></script>
-    <link rel="stylesheet" href="./css/estilo.css">
-    <link rel="stylesheet" href="./css/login.css">
-    <link rel="stylesheet" href="./css/cadastro.css">
-    <link rel="icon" href="./assets/icon/st_small_507x507-pad_600x600_f8f8f8.u1.png">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filhos do Olimpo | Cadastro</title>
+  <script src="./js/sessao.js"></script>
+  <link rel="stylesheet" href="./css/estilo.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/cadastro.css">
+  <link rel="icon" href="./assets/icon/st_small_507x507-pad_600x600_f8f8f8.u1.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
   <!--header inicio-->
   <div class="header transparente">
-      <div class="container">
-        <h1 class="titulo">
-          <a href="./index.html" class="inicial">
-            Filhos do Olimpo
-            <span class="bolt">
-              <img src="./assets/imgs/zeus.png"></img>
-            </span>
-          </a>
-        </h1>
-        <i class="fa-solid fa-bolt"></i>
-      </div>
+    <div class="container">
+      <h1 class="titulo">
+        <a href="./index.html" class="inicial">
+          Filhos do Olimpo
+          <span class="bolt">
+            <img src="./assets/imgs/zeus.png"></img>
+          </span>
+        </a>
+      </h1>
+      <i class="fa-solid fa-bolt"></i>
     </div>
+  </div>
   <div class="login">
     <div class="alerta_erro">
       <div class="card_erro" id="cardErro">
@@ -87,6 +89,7 @@
     </div>
   </div>
 </body>
+
 </html>
 <script>
   // Array para armazenar empresas cadastradas para validação de código de ativação 
@@ -116,38 +119,62 @@
       setInterval(sumirMensagem, 5000);
     }
 
-     for (let i = 0; i < 1; i++) {
-        if (nomeVar.length <= 1) {
+    let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+    let especiais = ['!', '@', '#', '$', '%', '&', '*']
+
+    if (nomeVar.length <= 1) {
+      cardErro.style.display = "block";
+      mensagem_erro.innerHTML = "(Nome deve conter mais que 1 caracter)";
+      finalizarAguardar();
+    } else if (nomeVar.length >= 2) {
+      
+      // for (let i = 0; i < num.length; i++) {
+     
+      //   if (isNaN(lista[i]))
+
+      // }
+      
+      for (let o = 0; o < num.length; o++) {
+        if (nomeVar.includes(num[o])) {
           cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(Nome deve conter mais que 1 caracter)";
+          mensagem_erro.innerHTML = "(Nome não deve conter números)";
           finalizarAguardar();
-          return;
+          break
         }
       }
-     for (let i = 0; i < 1; i++) {
-        if(!(emailVar.includes('@') && emailVar.includes('.'))) {
+      for (let e = 0; e < especiais.length; e++) {
+        if (nomeVar.includes(especiais[e])) {
           cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(E-Mail deve conter '@' e '.')";
+          mensagem_erro.innerHTML = "(Nome não deve conter caractéres especiais)";
           finalizarAguardar();
-          return;
+          break
         }
       }
-      for (let i = 0; i < 1; i++) {
-        if (senhaVar.length <= 6) {
-          cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(Senha deve conter mais do que 6 caracteres)";
-          finalizarAguardar();
-          return;
-        }
+    }
+    for (let i = 0; i < 1; i++) {
+      if (!(emailVar.includes('@') && emailVar.includes('.'))) {
+        cardErro.style.display = "block";
+        mensagem_erro.innerHTML = "(E-Mail deve conter '@' e '.')";
+        finalizarAguardar();
+
       }
-      for (let i = 0; i < 1; i++) {
-        if (confirmacaoSenhaVar != senhaVar) {
-          cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(As senhas devem coincidir)";
-          finalizarAguardar();
-          return;
-        }
+    }
+    for (let i = 0; i < 1; i++) {
+      if (senhaVar.length <= 6) {
+        cardErro.style.display = "block";
+        mensagem_erro.innerHTML = "(Senha deve conter mais do que 6 caracteres)";
+        finalizarAguardar();
+
       }
+    }
+    for (let i = 0; i < 1; i++) {
+      if (confirmacaoSenhaVar != senhaVar) {
+        cardErro.style.display = "block";
+        mensagem_erro.innerHTML = "(As senhas devem coincidir)";
+        finalizarAguardar();
+
+      }
+    }
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
       method: "POST",
@@ -173,7 +200,7 @@
             "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
 
           setTimeout(() => {
-            window.location = "login.html";
+            window.location = "./login.html";
           }, "2000");
 
           limparFormulario();
