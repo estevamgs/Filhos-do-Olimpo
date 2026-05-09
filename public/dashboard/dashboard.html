@@ -3,9 +3,194 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Filhos do Olimpo</title>
+    <script src="./js/sessao.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/estilo.css" />
+    <link rel="stylesheet" href="../css/dashboard.css" />
+    <link rel="icon" href="./assets/icon/st_small_507x507-pad_600x600_f8f8f8.u1.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
 <body>
-    
+    <div class="header transparente">
+      <div class="container">
+        <h1 class="titulo">
+          <a href="../index.html" class="inicial">
+            Filhos do Olimpo
+            <span class="bolt">
+              <img src="../assets/imgs/zeus.png"></img>
+            </span>
+          </a>
+        </h1>
+        <i class="fa-solid fa-bolt"></i>
+        <ul class="navbar">
+          <li>
+            <a href="../index.html">Início</a>
+          </li>
+            <li>
+              <a href="##">Personagens</a>
+            </li>
+            <li>
+              <a href="##">Deuses</a>
+            </li>
+          <li>|</li>
+          <li>
+            <a id="loginBtn" href="../login.html">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="banner">
+      <div class="container">
+        <div class="dashboard">
+            <div class="kpis">
+                <div class="kpi-card">
+                    <span class="tKpi">Poder Total</span>
+                    <h1 id="kpi_poder"></h1>
+                </div>
+                <div class="kpi-card">
+                    <span class="tKpi">Atributo mais forte</span>
+                    <h1 id="kpi_atributo"></h1>
+                </div>
+            </div>
+            <div class="chart-container">
+                <canvas id="myChart" style="position: relative; height:40vh; width:40vw"></canvas>
+            </div>
+        </div>
+      </div>
+    </div>
 </body>
+<script>
+  Chart.defaults.backgroundColor = '#DC143C40';
+  Chart.defaults.borderColor = '#DC143C';
+  Chart.defaults.color = '#FFFFFF';
+
+  function carregarDadosDeus(fk_deuses) {
+    fetch('/estatisticas/' + fk_deuses)
+      .then(function(response) {
+        return response.json();
+      })
+      .then(function(dados) {
+        if (dados.length > 0) {
+          var registro = dados[0]; // pega o primeiro resultado
+          let poderTotal =
+            (Number(registro.forca)  +
+            Number(registro.vitalidade)  +
+            Number(registro.energia)  +
+            Number(registro.inteligencia)  +
+            Number(registro.velocidade)  +
+            Number(registro.resistencia)) ;
+            
+            poderTotal = poderTotal.toFixed(0);
+            kpi_poder.innerHTML = poderTotal;
+
+            let atributos = {
+                "Força": registro.forca,
+                "Vitalidade": registro.vitalidade,
+                "Energia": registro.energia,
+                "Inteligência": registro.inteligencia,
+                "Velocidade": registro.velocidade,
+                "Resistência": registro.resistencia,
+            }
+            let maiorAtributo = 0;
+            let mensagem = ''
+            if(Number(registro.forca) > maiorAtributo){
+                maiorAtributo = registro.forca
+                mensagem = "Força";
+            }
+            if(Number(registro.vitalidade) > maiorAtributo){
+                maiorAtributo = registro.vitalidade;
+                mensagem = "Vitalidade";
+            }
+            if(Number(registro.energia) > maiorAtributo){
+                maiorAtributo = registro.energia;
+                mensagem = "Energia"
+            }
+            if(Number(registro.inteligencia) > maiorAtributo){
+                maiorAtributo = registro.inteligencia;
+                mensagem = "Inteligência";
+            }
+            if(Number(registro.velocidade) > maiorAtributo){
+                maiorAtributo = registro.velocidade;
+                mensagem = "Velocidade";
+            }
+            if(Number(registro.resistencia) > maiorAtributo){
+                maiorAtributo = registro.resistencia;
+                mensagem = "Resistência"
+            }
+            kpi_atributo.innerHTML = mensagem;
+          const data = {
+            labels: ['Força','Vitalidade','Energia','Inteligência','Velocidade','Resistência'],
+            datasets: [{
+              label: registro.nome_deus,
+              borderColor: '#B22222',
+              backgroundColor: '#DC143C59',
+              pointBackgroundColor: '#FF4C4C',
+              pointBorderColor: '#8B0000',
+
+              data: [
+                registro.forca,
+                registro.vitalidade,
+                registro.energia,
+                registro.inteligencia,
+                registro.velocidade,
+                registro.resistencia
+              ],
+            }]
+          };
+
+          const config = {
+            type: 'radar',
+            data: data,
+            options: {
+              scales: {
+                r: {
+                  min: 0,
+                  max: 100,
+                  ticks: {
+                    display: false,
+                    stepSize: 20,
+                    color: 'white',
+                    callback: function(value) {
+                        return value === 100 ? '100' : '';
+                    },
+                    grid: {
+                        color: '#FF000026'
+                    },
+                    angleLines: {
+                        color: '#FF000040'
+                    },
+                  },
+                  pointLabels: {
+                    color: 'white',
+                    font: { size: 14 }
+                  } 
+                }
+              },
+              plugins: {
+                legend: { labels: { color: 'white', font: { size: 16 } } }
+              }
+            }
+          };
+
+          new Chart(document.getElementById('myChart'), config);
+        }
+      })
+      .catch(function(error) {
+        console.error('Erro ao carregar dados:', error);
+      });
+  }
+  carregarDadosDeus(2);
+</script>
+<!-- <script>
+    const myChart = new Chart(
+        document.getElementById('myChart'),
+        config
+    );
+</script> -->
 </html>
