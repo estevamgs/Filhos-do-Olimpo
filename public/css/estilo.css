@@ -11,43 +11,96 @@ body.poseidon {
   background-color: #0d3b66;
   color: #e0f7fa;
 }
-body.poseidon .header {
-  background-color: #1e6091;
+body.poseidon p{
+  color: #00BFFF
+}
+body.poseidon .navbar {
+  color: #87CEFA
+}
+body.poseidon .navbar a{
+  color: #87CEFA
 }
 body.poseidon .navbar a:hover {
-  color: #32b9cd;
+  color: #00BFFF;
 }
-
+body.poseidon .titulo a{
+  color: #00BFFF;
+}
+body.poseidon .bolt{
+  background-image: url('../assets/imgs/poseidon.png');
+  width: 30px;
+  height: 35px;
+  top: 0px  
+}
 /* Tema Hades */
 body.hades {
   background-color: #1c1c1c;
-  color: #f5f5f5;
+  color: #343434;
 }
-body.hades .header {
-  background-color: #3c096c;
+body.hades p{
+  color: #FF0000;
+
+}
+body.hades .navbar{
+  color: #FF0000
+}
+body.hades .navbar a{
+  color: #FF0000;
 }
 body.hades .navbar a:hover {
-  color: #b03a48;
+  font-weight: bold;
+  color: #DC143C;
+
+}
+body.hades .titulo a{
+  color: #FF0000;
+}
+body.hades .bolt{
+  background-image: url('../assets/imgs/hades.png');
+  width: 40px;
+  height: 40px;
 }
 
 /* Tema Zeus */
 body.zeus {
-  background-color: #fdf6e3;
   color: #333;
 }
-body.zeus .header {
-  background-color: #ffd60a;
+body.zeus p{
+  color: #FFD700
+}
+body.zeus .navbar{
+  color: #FFD700
+}
+body.zeus .navbar a{
+  color: #FFD700
 }
 body.zeus .navbar a:hover {
-  color: #1e6091;
+  color: #ffd60a;
+}
+body.zeus .titulo a{
+  color: #FFD700;
 }
 
-body {
+html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Cinzel', serif;
   background-color: black;
+  background-image: url('../assets/imgs/e994ff5019046b02f3ac9ad1aa79e4ce1685624efe61283eb0e5be4d29fea6fa.webp');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:relative;
 }
+body::before{
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  z-index: 0;
+}
+
 
 :root {
   --tamanho-header: 80px;
@@ -120,6 +173,12 @@ body {
   font-size: 14px;
   position: relative;
 }
+.navbar #loginBtn{
+  padding: 6px 12px;
+  border: 1px solid;
+  border-radius: 20px;
+  
+}
 
 .navbar a {
   transition: 0.5s;
@@ -133,7 +192,7 @@ body {
 } 
 
 .titulo {
-display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
@@ -142,7 +201,7 @@ display: flex;
 }
 
 .titulo .inicial{
-display: flex;
+  display: flex;
   align-items: center;
   gap: 10px;
   text-decoration: none;
@@ -150,10 +209,15 @@ display: flex;
   font-size: 28px;
 }
 
-.bolt img{
-    width: 45px;
-    height: 45px;
-  font-weight: 00;
+.bolt{
+    width: 40px;
+    height: 40px;
+    background-image: url('../assets/imgs/zeus.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -4px;
 }
 
 .header h1 {
@@ -166,18 +230,19 @@ display: flex;
   width: 100%;
   height: 100vh;
   color: white;
-  background-image: url('../assets/imgs/e994ff5019046b02f3ac9ad1aa79e4ce1685624efe61283eb0e5be4d29fea6fa.webp');
+  /* background-image: url('../assets/imgs/e994ff5019046b02f3ac9ad1aa79e4ce1685624efe61283eb0e5be4d29fea6fa.webp');
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat; */
   position:relative;
 }
 
-.banner::before {
-  content: "";
+/* .banner::before {
+  /* content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.6);
-} 
+  background: rgba(0,0,0,0.6); 
+}  */
 
 .banner .container {
   justify-content: center;
@@ -199,6 +264,15 @@ display: flex;
 
 .banner .container span {
   font-weight: 800;
+}
+.banner .percy{
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  font-size: 36px;
+  text-align: center;
+  align-items: center;
 }
 
 /* MISSÃO VISÃO VALORES */
