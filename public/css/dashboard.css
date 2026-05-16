@@ -106,6 +106,57 @@ body.hades .tKpi{
     font-size: 14px;
     color: #FF4C4C;
 }
+body.zeus .banner{
+    width: 100%;
+    height: 100vh;
+    background: rgba(15, 15, 20, 0.88),;
+    background: url('../assets/imgs/zeus.jpeg');
+    background-size: cover;
+    background-position: center;
+}
+body.zeus .header{
+  backdrop-filter: blur(10px);
+}
+body.zeus .navbar a{
+    color:#F5F5F5;
+    font-weight: bold;
+}
+body.zeus .navbar a:hover{
+    font-weight: bolder;
+    color: #faffbb
+}
+body.zeus .chart-container {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  background: rgba(20, 20, 20, 0.65);
+  border: 1px solid #FFD700;
+  border-radius: 15px;
+  box-shadow: 0 0 3px #FFA500;
+  color: white;
+  transition: 0.3s ease;
+}
+body.zeus .kpi-card{
+    width: 230px;
+    padding: 20px;
+    border-radius: 18px;
+    background: rgba(20,20,20,0.65);
+    border: 1px solid #FFD700;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 3px #FFA500;
+    text-align: center;
+    color: white;
+    transition: 0.3s ease;
+}
+body.zeus .tKpi{
+    font-size: 14px;
+    color: #FFD700;
+}
 .chart-container:hover{
     transform: scale(1.01);
 }
