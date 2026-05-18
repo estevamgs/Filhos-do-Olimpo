@@ -265,47 +265,60 @@ body::before{
 .banner .container span {
   font-weight: 800;
 }
-.banner .percy{
+ /* .banner .tituloPercy{
   width: 50%;
-  height: 75vh;
+  height: 15vh;
   display: flex;
-  margin-left: 400px;
+  margin: 0 auto;
   justify-content: center;
   font-size: 36px;
   text-align: center;
   align-items: center;
+} */
+.contPercy{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    position: relative;
 }
-
-/* MISSÃO VISÃO VALORES */
-
-.social {
-  background-color: #e5e5e5;
-  display: flex;
+.imgPercy img{
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 0 7px rgb(212, 127, 22);
+    margin-top: 150px;
 }
-
-.social .container {
-  justify-content: center;
+.infoPercy{
+    width: 70%;
+    color: white;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 150px;
 }
-
-.box img {
-  width: 170px;
-}
-
-.social .container .boxes {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 30px 0;
-}
-
-.social p {
-  text-align: center;
-}
-
-.box {
+.textos{
+  font-size: 25px;
+  width: 145%;
+  margin-left: -200px
+} 
+.direita{
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+.tituloPercy{
+    margin-bottom: 650px;
+    margin-right: -25px;
+}
+.tituloPercy h3{
+    font-size: 40px;
+}
+.tituloPercy img{
+  width: 45px;
 }
 
 /* FOOTER */
