@@ -11,6 +11,25 @@ body.poseidon {
   background-color: #0d3b66;
   color: #e0f7fa;
 }
+body.poseidon .header {
+  height: var(--tamanho-header);
+  border-bottom: 2px solid  #00BFFF;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 100;
+
+  position: fixed;
+  background-color: black;
+  transition: background-color, border-bottom 0.3s ease-in-out, padding 0.4s ease-in-out ;
+}
+body.poseidon .header.transparente{
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
+}
 body.poseidon p{
   color: #00BFFF
 }
@@ -32,10 +51,32 @@ body.poseidon .bolt{
   height: 35px;
   top: 0px  
 }
+body.poseidon .infoPercy p{
+  color: white;
+}
 /* Tema Hades */
 body.hades {
   background-color: #1c1c1c;
   color: #343434;
+}
+body.hades .header {
+  height: var(--tamanho-header);
+  border-bottom: 2px solid  red;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 100;
+
+  position: fixed;
+  background-color: black;
+  transition: background-color, border-bottom 0.3s ease-in-out, padding 0.4s ease-in-out ;
+}
+body.hades .header.transparente{
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
 }
 body.hades p{
   color: #FF0000;
@@ -60,10 +101,31 @@ body.hades .bolt{
   width: 40px;
   height: 40px;
 }
-
+body.hades .infoPercy p{
+  color: white;
+}
 /* Tema Zeus */
 body.zeus {
   color: #333;
+}
+body.zeus .header {
+  height: var(--tamanho-header);
+  border-bottom: 2px solid  #FFD700;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  z-index: 100;
+
+  position: fixed;
+  background-color: black;
+  transition: background-color, border-bottom 0.3s ease-in-out, padding 0.4s ease-in-out ;
+}
+body.zeus .header.transparente{
+  background-color: rgba(0, 0, 0, 0);
+  border-bottom: none;
 }
 body.zeus p{
   color: #FFD700
@@ -80,7 +142,9 @@ body.zeus .navbar a:hover {
 body.zeus .titulo a{
   color: #FFD700;
 }
-
+body.zeus .infoPercy p{
+  color: white;
+}
 html, body {
   height: 100%;
   margin: 0;
@@ -283,6 +347,7 @@ body::before{
     justify-content: space-between;
     padding: 0 100px;
     position: relative;
+    border-bottom: 1px solid white;
 }
 .imgPercy img{
     width: 650px;
@@ -291,10 +356,12 @@ body::before{
     margin-top: 150px;
 }
 .infoPercy{
-    width: 70%;
+    width: 85%;
+    margin-right: 30px;
     color: white;
     text-align: right;
     display: flex;
+    gap: 10px;
     flex-direction: column;
     justify-content: center;
     margin-top: 150px;
@@ -302,7 +369,7 @@ body::before{
 .textos{
   font-size: 25px;
   width: 145%;
-  margin-left: -200px
+  margin-left: -200px;
 } 
 .direita{
   width: 50%;
@@ -311,15 +378,40 @@ body::before{
   align-items: center;
 }
 .tituloPercy{
-    margin-bottom: 650px;
-    margin-right: -25px;
+    margin-bottom: 675px;
+    margin-right: -100px;
 }
 .tituloPercy h3{
-    font-size: 40px;
+    font-size: 38px;
+    color: #00BFFF;
 }
 .tituloPercy img{
   width: 45px;
 }
+.contPercy2{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+.infoPercy2{
+    width: 85%;
+    margin-right: 30px;
+    color: white;
+    text-align: right;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+.textos2{
+  font-size: 25px;
+  width: 145%;
+  margin-left: -200px
+} 
 
 /* FOOTER */
 

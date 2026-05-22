@@ -7,11 +7,20 @@
     <title>Filhos do Olimpo</title>
 
     <script src="./js/sessao.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="./css/estilo.css" />
-    <link rel="icon" href="./assets/icon/st_small_507x507-pad_600x600_f8f8f8.u1.png" />
+    <link
+      rel="icon"
+      href="./assets/icon/st_small_507x507-pad_600x600_f8f8f8.u1.png"
+    />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="header transparente">
@@ -19,9 +28,7 @@
         <h1 class="titulo">
           <a href="./index.html" class="inicial">
             Filhos do Olimpo
-            <span class="bolt">
-
-            </span>
+            <span class="bolt"> </span>
           </a>
         </h1>
         <i class="fa-solid fa-bolt"></i>
@@ -29,17 +36,17 @@
           <li>
             <a href="index.html">Início</a>
           </li>
-            <li>
-              <a href="##">Personagens</a>
-            </li>
-            <li>
-              <a href="##">Deuses</a>
-            </li>
-            <li>
-              <a href="./dashboard/dashboard.html">Dash</a>
-            </li>
+          <li>
+            <a href="##">Personagens</a>
+          </li>
+          <li>
+            <a href="##">Deuses</a>
+          </li>
+          <li>
+            <a href="./dashboard/dashboard.html">Dash</a>
+          </li>
           <li>|</li>
-          
+
           <li>
             <a id="loginBtn" href="login.html">Login</a>
           </li>
@@ -48,20 +55,51 @@
     </div>
     <div class="banner">
       <div class="container">
-        <p>Seja Bem vindo <span id="tituloUsuario">Semi-deus.</span><br> <span id="fraseContainer">Filho de <span id="fraseDeus">Poseidon, deus dos mares</span></span></p>
+        <p>
+          Seja Bem vindo <span id="tituloUsuario">Semi-deus.</span><br />
+          <span id="fraseContainer"
+            >Filho de <span id="fraseDeus">Poseidon, deus dos mares</span></span
+          >
+        </p>
       </div>
       <div class="contPercy">
         <div class="imgPercy">
-          <img src="./assets/imgs/percy1.jpeg">
+          <img src="./assets/imgs/percy1.jpeg" />
         </div>
         <div class="direita">
           <div class="tituloPercy">
-            <h3>Perceu Jackson <img src="./assets/imgs/percy.png"></h3>
+            <h3>Perceu Jackson <img src="./assets/imgs/percy.png" /></h3>
           </div>
         </div>
         <div class="infoPercy">
           <div class="textos">
-            <p><b>Perceu Jackson (Percy Jackson)</b> é o protagonista da franquia <b><i>"Percy Jackson e os Olimpianos"</i></b>, criada por Rick Riordan. Filho de Poseidon, o deus grego dos mares, Percy descobre ainda muito jovem que é um semideus — metade humano e metade deus — e passa a viver em um mundo onde criaturas mitológicas, monstros e os próprios deuses do Olimpo existem secretamente no mundo moderno.</p>
+            <p>
+              <b style="color: #00bfff">Perceu Jackson (Percy Jackson)</b> é o
+              protagonista da franquia
+              <b><i>"Percy Jackson e os Olimpianos"</i></b
+              >, criada por Rick Riordan. Filho de Poseidon, o deus grego dos
+              mares, Percy descobre ainda muito jovem que é um semideus — metade
+              humano e metade deus — e passa a viver em um mundo onde criaturas
+              mitológicas, monstros e os próprios deuses do Olimpo existem
+              secretamente no mundo moderno.
+            </p>
+          </div>
+        </div>
+        </div>
+        <div class="contPercy2">
+          <div class="infoPercy2">
+            <div class="texto2">
+              <p>
+                <b style="color: #00bfff">Perceu Jackson (Percy Jackson)</b> é o
+                protagonista da franquia
+                <b><i>"Percy Jackson e os Olimpianos"</i></b
+                >, criada por Rick Riordan. Filho de Poseidon, o deus grego dos
+                mares, Percy descobre ainda muito jovem que é um semideus — metade
+                humano e metade deus — e passa a viver em um mundo onde criaturas
+                mitológicas, monstros e os próprios deuses do Olimpo existem
+                secretamente no mundo moderno.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -70,39 +108,39 @@
   </body>
 </html>
 <script>
-  window.onload = function(){
-  let nomeUsuario = sessionStorage.NOME_USUARIO;
-  let deusUsuario = Number(sessionStorage.DEUS_USUARIO);
+  window.onload = function () {
+    let nomeUsuario = sessionStorage.NOME_USUARIO;
+    let deusUsuario = Number(sessionStorage.DEUS_USUARIO);
 
-  if(nomeUsuario){
-    document.getElementById("tituloUsuario").innerHTML = nomeUsuario;
+    if (nomeUsuario) {
+      document.getElementById("tituloUsuario").innerHTML = nomeUsuario;
 
-    let loginBtn = document.getElementById("loginBtn");
-    loginBtn.innerHTML = "Sair";
-    loginBtn.href = "#";
-    loginBtn.onclick = function(){
-    sessionStorage.clear();
-    window.location = "./login.html";
-    };
+      let loginBtn = document.getElementById("loginBtn");
+      loginBtn.innerHTML = "Sair";
+      loginBtn.href = "#";
+      loginBtn.onclick = function () {
+        sessionStorage.clear();
+        window.location = "./login.html";
+      };
 
-    const deuses = {
-      1: "Poseidon, o Deus dos Mares",
-      2: "Hades, o Senhor do Submundo",
-      3: "Zeus, o Deus dos Raios"
-    };
+      const deuses = {
+        1: "Poseidon, o Deus dos Mares",
+        2: "Hades, o Senhor do Submundo",
+        3: "Zeus, o Deus dos Raios",
+      };
 
-    document.getElementById("fraseDeus").innerHTML = deuses[deusUsuario];
-    document.getElementById("fraseContainer").style.display = "inline";
+      document.getElementById("fraseDeus").innerHTML = deuses[deusUsuario];
+      document.getElementById("fraseContainer").style.display = "inline";
 
-    if(deusUsuario === 1){
-      document.body.classList.add("poseidon");
-    } else if(deusUsuario === 2){
-      document.body.classList.add("hades");
-    } else if(deusUsuario === 3){
-      document.body.classList.add("zeus");
+      if (deusUsuario === 1) {
+        document.body.classList.add("poseidon");
+      } else if (deusUsuario === 2) {
+        document.body.classList.add("hades");
+      } else if (deusUsuario === 3) {
+        document.body.classList.add("zeus");
+      }
+    } else {
+      document.getElementById("fraseContainer").style.display = "none";
     }
-  } else {
-    document.getElementById("fraseContainer").style.display = "none";
-  }
-}
+  };
 </script>
