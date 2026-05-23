@@ -347,7 +347,7 @@ body::before{
     justify-content: space-between;
     padding: 0 100px;
     position: relative;
-    border-bottom: 1px solid white;
+    
 }
 .imgPercy img{
     width: 650px;
@@ -396,7 +396,7 @@ body::before{
     align-items: center;
     padding: 0 120px;
     gap: 80px;
-    border-bottom: 1px solid white;
+    
 }
 .infoPercy2{
     width: 55%;
@@ -471,7 +471,6 @@ body::before{
     font-size: 22px;
     font-family: 'Cinzel', serif;
     background: #00bfff52;
-    backdrop-filter: blur(5px);
     transition: .2s;
     box-shadow: 0 0 15px rgba(0,191,255,.25);
 }

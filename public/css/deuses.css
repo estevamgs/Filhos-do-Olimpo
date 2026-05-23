@@ -1,0 +1,19 @@
+.cardPersonagem img{
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    opacity: .6;
+    transition: .3s ease;
+}
+.btnPerso.zeus{
+    color: #ffffb6;
+    background: #ffd900d3;
+}
+.btnPerso.poseidon{
+    color: #c8eeff;
+    background: #00BFFF;
+}
+.btnPerso.hades{
+    color:#ffc7c7;
+    background: #FF0000;
+}
