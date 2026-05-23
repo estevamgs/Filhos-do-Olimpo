@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+<input placeholder="Mínimo" type="text" id="input_min"><br>
+<input placeholder="Máximo" type="text" id="input_max"> <br>
+<body>
+   <button onclick="sortear()">Sortear Aleatório</button>
+   <button onclick="sortear0a10()">Sortear de 0 até 10</button>
+   <button onclick="sortear3a10()">Sortear de 3 até 10</button>
+   <button onclick="sortearMinMax()">Sortear de min até max</button> <br>
+   <div id="div_mensagem"></div>
+</body>
+</html>
+<script>
+   function sortear() {
+      let aleatorio = Math.random(); // 0.5
+      
+      console.log(aleatorio);
+
+      div_mensagem.innerHTML = `Sorteado: ${aleatorio}`;
+   }
+
+   function sortear0a10() {
+      let aleatorio = Math.random(); // 0.5
+      let formatado = aleatorio * 10;
+      let inteiro = formatado.toFixed();
+
+      div_mensagem.innerHTML = `
+         Sorteado: ${aleatorio} <br>
+         Formatado: ${formatado} <br>
+         Inteiro: ${inteiro} <br>
+      `;
+   }
+   
+   function sortear3a10() {
+      let aleatorio = Math.random();
+      let min = 3;
+      let max = 10;
+      let intervalo = max - min; 
+      let formatado = aleatorio * intervalo + min;
+      let inteiro = formatado.toFixed();
+
+      div_mensagem.innerHTML = `
+         Sorteado: ${aleatorio} <br>
+         Formatado: ${formatado} <br>
+         Inteiro: ${inteiro} <br>
+      `;
+   }
+   
+   function sortearMinMax() {
+      let aleatorio = Math.random();
+      let min = Number(input_min.value);
+      let max = Number(input_max.value);
+      let intervalo = max - min; 
+      let formatado = aleatorio * intervalo + min;
+      let inteiro = formatado.toFixed();
+
+      div_mensagem.innerHTML = `
+         Sorteado: ${aleatorio} <br>
+         Formatado: ${formatado} <br>
+         Inteiro: ${inteiro} <br>
+      `;
+   }
+</script>
