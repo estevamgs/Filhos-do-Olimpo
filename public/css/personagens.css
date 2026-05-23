@@ -33,7 +33,7 @@ html, body{
     text-decoration: none;
     font-family: 'Cinzel', serif;
     transition: .3s;
-    opacity: .6;
+    opacity: .5;
     margin-top: 12px;
 }
 .btnPerso.percy{
@@ -56,7 +56,7 @@ html, body{
 }
 .cardPersonagem img{
     width: 320px;
-    opacity: .6;
+    opacity: .5;
     transition: .3s ease;
 }
 .cardPersonagem:hover img,
