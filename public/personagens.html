@@ -72,21 +72,22 @@
     let deusUsuario = Number(sessionStorage.DEUS_USUARIO);
     if (nomeUsuario) {
         let loginBtn = document.getElementById("loginBtn");
-        loginBtn.innerHTML = "Sair";
-        loginBtn.href = "#";
-        loginBtn.onclick = function(){
-         sessionStorage.clear();
-         window.location = "../login.html";
-    if (deusUsuario === 1) {
-        document.body.classList.add("poseidon");
-      } else if (deusUsuario === 2) {
-        document.body.classList.add("hades");
-      } else if (deusUsuario === 3) {
-        document.body.classList.add("zeus");
-      } else {
-      document.getElementById("fraseContainer").style.display = "none";
-     }
+    loginBtn.innerHTML = "Sair";
+    loginBtn.href = "#";
+    loginBtn.onclick = function(){
+    sessionStorage.clear();
+    window.location = "../login.html";
     };
-  }
+
+
+    if(deusUsuario === 1){
+      document.body.classList.add("poseidon");
+    } else if(deusUsuario === 2){
+      document.body.classList.add("hades");
+    } else if(deusUsuario === 3){
+      document.body.classList.add("zeus");
+    }
+      carregarDadosDeus(deusUsuario);
+    };
 }
 </script>
