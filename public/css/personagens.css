@@ -56,11 +56,13 @@ html, body{
 }
 .cardPersonagem img{
     width: 320px;
+    filter: grayscale(1);
     opacity: .4;
     transition: .3s ease;
 }
 .cardPersonagem:hover img,
 .cardPersonagem:hover .btnPerso{
+    filter: grayscale(0);
     opacity: 1;
     transform: scale(1.03);
 
