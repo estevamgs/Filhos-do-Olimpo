@@ -79,15 +79,4 @@ Inspirado visualmente em:
 
 ---
 
-## 📂 Estrutura do Projeto
-
-📁 Filhos-do-Olimpo
-├── 📁 assets
-├── 📁 css
-├── 📁 js
-├── 📁 dashboard
-├── 📄 index.html
-├── 📄 personagens.html
-├── 📄 deuses.html
-├── 📄 login.html
-└── 📄 README.md
+Desenvolvido por Gustavo Estevam ⚡
