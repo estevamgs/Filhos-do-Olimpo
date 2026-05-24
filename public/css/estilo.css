@@ -54,12 +54,6 @@ body.poseidon .bolt{
 body.poseidon .infoPercy p{
   color: white;
 }
-body.poseidon .infoPercy2 p{
-  color: white;
-}
-body.poseidon .infoPercy3 p{
-  color: white;
-}
 /* Tema Hades */
 body.hades {
   background-color: #1c1c1c;
@@ -110,12 +104,6 @@ body.hades .bolt{
 body.hades .infoPercy p{
   color: white;
 }
-body.hades .infoPercy2 p{
-  color: white;
-}
-body.hades .infoPercy3 p{
-  color: white;
-}
 /* Tema Zeus */
 body.zeus {
   color: #333;
@@ -155,12 +143,6 @@ body.zeus .titulo a{
   color: #FFD700;
 }
 body.zeus .infoPercy p{
-  color: white;
-}
-body.zeus .infoPercy2 p{
-  color: white;
-}
-body.zeus .infoPercy3 p{
   color: white;
 }
 html, body {
@@ -306,7 +288,7 @@ body::before{
   margin: 0;
 }
 
-/* BANNER */
+/*   */
 
 .banner {
   width: 100%;
@@ -414,7 +396,6 @@ body::before{
     align-items: center;
     padding: 0 120px;
     gap: 80px;
-    
 }
 .infoPercy2{
     width: 55%;

@@ -1,3 +1,9 @@
+html,body{
+    background-image: url('../assets/imgs/fundoDeuses.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+  background-position: center;
+}
 .cardPersonagem img{
     width: 520px;
     height: 520px;
