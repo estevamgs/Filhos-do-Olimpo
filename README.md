@@ -58,6 +58,17 @@ efeitos visuais modernos ✨
 Inspirado visualmente em:
 
 Percy Jackson
-God of War
 Hades
 séries/fantasias mitológicas 🎬
+
+📂 Estrutura do Projeto
+📁 Filhos-do-Olimpo
+ ├── 📁 assets
+ ├── 📁 css
+ ├── 📁 js
+ ├── 📁 dashboard
+ ├── 📄 index.html
+ ├── 📄 personagens.html
+ ├── 📄 deuses.html
+ ├── 📄 login.html
+ └── 📄 README.md
