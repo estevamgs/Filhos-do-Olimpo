@@ -5,29 +5,29 @@ html, body{
     color: white;
     font-family: 'Cinzel', serif;
 }
-.contAnna{
+.contGrover{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/annabethFundo.jpeg');
+    background-image: url('../assets/imgs/groverFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
 }
-.imgAnna img{
+.imgGrover img{
     width: 420px;
     height: 620px;
     object-fit: cover;
-    border: 3px solid rgba(201, 164, 92, 0.15);
+    border: 3px solid rgba(92, 201, 116, 0.144);
     border-radius: 22px;
-    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+    box-shadow: 0 0 30px rgba(92, 201, 116, 0.144);
 }
-.infoAnna{
+.infoGrover{
     width: 700px;
     display: flex;
     flex-direction: column;
@@ -35,23 +35,21 @@ html, body{
     align-items: center;
     gap: 35px;
 }
-.tituloAnna h3{
+.tituloGrover h3{
     display: flex;
     align-items: center;
-    font-size: 64px;
+    font-size: 54px;
     color: #f5e6c8;
     gap: 15px;
     text-align: center;
+    white-space: nowrap
 }
-.tituloAnna h3{
+.tituloGrover h3{
     font-size: 38px;
     width: 500px;
     margin-bottom: 475px;
     margin-right: -800px;
     margin-left: 75px;
-}
-.tituloAnna img{
-    width: 90px;
 }
 .textos{
     width: 100%;
@@ -63,7 +61,7 @@ html, body{
     color: #e8dcc5;
     text-align: justify;
 }
-.contAnna2{
+.contGrover2{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -71,29 +69,29 @@ html, body{
     align-items: flex-start;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/annabethFundo.jpeg');
+    background-image: url('../assets/imgs/groverFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
 }
-.imgAnna2 img{
+.imgGrover2 img{
     display: flex;
     justify-content: right;
     width: 550px;
-    border: 3px solid rgba(201, 164, 92, 0.15);
+    border: 3px solid rgba(92, 201, 116, 0.144);
     border-radius: 22px;
-    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+    box-shadow: 0 0 30px rgba(92, 201, 116, 0.144);
 }
-.infoAnna2{
+.infoGrover2{
     width: 55%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: left;
 }
-.tituloAnna2 h3{
+.tituloGrover2 h3{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -101,15 +99,12 @@ html, body{
     margin-bottom: 30px;
     color: #f5e6c8;
 }
-.tituloAnna2 img{
-    width: 70px;
-}
 .textos2 p{
     font-size: 22px;
     color: #e8dcc5;
     text-align: justify;
 }
-.tituloAnna3 h3{
+.tituloGrover3 h3{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -117,13 +112,13 @@ html, body{
     margin-bottom: 30px;
     color: #f5e6c8;
 }
-.imgAnna3 img{
+.imgGrover3 img{
     margin-top: 75px;
     display: flex;
     justify-content: right;
     width: 650px;
-    border: 3px solid rgba(201, 164, 92, 0.15);
+    border: 3px solid rgba(92, 201, 116, 0.144);
     border-radius: 22px;
-    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+    box-shadow: 0 0 30px rgba(92, 201, 116, 0.144);
 }
     

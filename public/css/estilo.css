@@ -352,7 +352,7 @@ body::before{
 .imgPercy img{
     width: 650px;
     border-radius: 20px;
-    box-shadow: 0 0 7px rgb(212, 127, 22);
+    box-shadow: 0 0 7px #00bfffad;
     margin-top: 150px;
 }
 .infoPercy{
@@ -419,7 +419,7 @@ body::before{
 .imgPercy2 img{
     width: 650px;
     border-radius: 20px;
-    box-shadow: 0 0 7px rgb(212, 127, 22);
+    box-shadow: 0 0 7px #00bfffad;
 }
 .contPercy3{
     width: 100%;
@@ -452,7 +452,7 @@ body::before{
 .imgPercy3 img{
     width: 650px;
     border-radius: 20px;
-    box-shadow: 0 0 7px rgb(212, 127, 22);
+    box-shadow: 0 0 7px #00bfffad;
 }
 .botaoPers{
     width: 100%;
