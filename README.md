@@ -1,74 +1,93 @@
-# Filhos-do-Olimpo
-🏛️ Filhos do Olimpo
+# 🏛️ Filhos do Olimpo
 
-Projeto inspirado no universo de Percy Jackson e os Olimpianos, criado com foco em uma experiência visual cinematográfica e imersiva 🌊⚡🏛️.
+Projeto inspirado no universo de **Percy Jackson e os Olimpianos**, criado com foco em uma experiência **visual cinematográfica e imersiva** 🌊⚡🏛️.  
 O site apresenta personagens, deuses e elementos do universo mitológico grego moderno, trazendo páginas dedicadas para cada personagem com informações, imagens e estilos únicos.
 
-✨ Sobre o Projeto
+---
 
-O objetivo do projeto foi desenvolver um site temático inspirado no universo de Percy Jackson, utilizando conceitos de:
+## ✨ Sobre o Projeto
 
-design responsivo 📱
-efeitos visuais modernos ✨
-organização de conteúdo 🎭
-integração com banco de dados 🗄️
+O objetivo foi desenvolver um site temático inspirado no universo de Percy Jackson, utilizando conceitos de:
+
+- 📱 **Design responsivo**
+- ✨ **Efeitos visuais modernos**
+- 🎭 **Organização de conteúdo**
+- 🗄️ **Integração com banco de dados**
 
 Cada personagem possui:
 
-página própria 🧑‍🎤
-identidade visual 🎨
-cores específicas 🌈
-seções contando sua história 📖
-🧩 Funcionalidades
+- 🧑‍🎤 Página própria  
+- 🎨 Identidade visual  
+- 🌈 Cores específicas  
+- 📖 Seções contando sua história  
 
-✅ Sistema de Login
-✅ Identificação do deus do usuário ⚡🌊💀
-✅ Página dedicada para personagens
-✅ Página dedicada para deuses do Olimpo 🏛️
-✅ Layout cinematográfico inspirado na série 🎬
-✅ Efeitos hover interativos ✨
-✅ Backgrounds personalizados para cada personagem 🌌
-✅ Dashboard integrada 📊
-✅ Sessão de usuário utilizando SessionStorage 💾
+---
 
-🏛️ Personagens Presentes
-🌊 Percy Jackson
-🦉 Annabeth Chase
-🌿 Grover Underwood
-⚙️ Tecnologias Utilizadas
-💻 Front-end
-HTML5
-CSS3
-JavaScript
-🗄️ Banco de Dados
-MySQL
-🛠️ Ferramentas
-Visual Studio Code 🧠
-Git & GitHub 🌐
-🎨 Design do Projeto
+## 🧩 Funcionalidades
+
+✅ Sistema de Login  
+✅ Identificação do deus do usuário ⚡🌊💀  
+✅ Página dedicada para personagens  
+✅ Página dedicada para deuses do Olimpo 🏛️  
+✅ Layout cinematográfico inspirado na série 🎬  
+✅ Efeitos hover interativos ✨  
+✅ Backgrounds personalizados para cada personagem 🌌  
+✅ Dashboard integrada 📊  
+✅ Sessão de usuário utilizando **SessionStorage** 💾  
+
+---
+
+## 🏛️ Personagens Presentes
+
+- 🌊 **Percy Jackson**  
+- 🦉 **Annabeth Chase**  
+- 🌿 **Grover Underwood**  
+
+---
+
+## ⚙️ Tecnologias Utilizadas
+
+### 💻 Front-end
+- HTML5  
+- CSS3  
+- JavaScript  
+
+### 🗄️ Banco de Dados
+- MySQL  
+
+### 🛠️ Ferramentas
+- Visual Studio Code 🧠  
+- Git & GitHub 🌐  
+
+---
+
+## 🎨 Design do Projeto
 
 O projeto utiliza:
 
-cores cinematográficas 🌌
-gradientes escuros 🌑
-elementos da mitologia grega 🏛️
-fontes clássicas ✒️
-efeitos visuais modernos ✨
+- 🌌 Cores cinematográficas  
+- 🌑 Gradientes escuros  
+- 🏛️ Elementos da mitologia grega  
+- ✒️ Fontes clássicas  
+- ✨ Efeitos visuais modernos  
 
 Inspirado visualmente em:
 
-Percy Jackson
-Hades
-séries/fantasias mitológicas 🎬
+- Percy Jackson  
+- Hades  
+- Séries/fantasias mitológicas 🎬  
 
-📂 Estrutura do Projeto
+---
+
+## 📂 Estrutura do Projeto
+
 📁 Filhos-do-Olimpo
- ├── 📁 assets
- ├── 📁 css
- ├── 📁 js
- ├── 📁 dashboard
- ├── 📄 index.html
- ├── 📄 personagens.html
- ├── 📄 deuses.html
- ├── 📄 login.html
- └── 📄 README.md
+├── 📁 assets
+├── 📁 css
+├── 📁 js
+├── 📁 dashboard
+├── 📄 index.html
+├── 📄 personagens.html
+├── 📄 deuses.html
+├── 📄 login.html
+└── 📄 README.md
