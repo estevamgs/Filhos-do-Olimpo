@@ -146,4 +146,19 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
 }
-    
+.btnCon{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    background: #c9a55cbd;
+    box-shadow: 0 0 15px #c9a45c;
+    transition: .2s;
+}
+
+.btnCon:hover{
+    transform: scale(1.05);
+}

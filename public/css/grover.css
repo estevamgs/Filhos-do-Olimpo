@@ -1,3 +1,23 @@
+/* Tema deuses */
+body.poseidon .textos p{
+    color:#e8dcc5
+}
+body.poseidon .textos2 p{
+    color:#e8dcc5
+}
+body.hades .textos p{
+    color:#e8dcc5
+}
+body.hades .textos2 p{
+    color:#e8dcc5
+}
+body.zeus .textos p{
+    color:#e8dcc5
+}
+body.zeus .textos2 p{
+    color:#e8dcc5
+}
+/* Tema deuses */
 html, body{
     height: 100%;
     margin: 0;
@@ -121,4 +141,19 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(92, 201, 116, 0.144);
 }
-    
+.btnCon{
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    background: #3f6b3f;
+    box-shadow: 0 0 15px rgb(57, 117, 62);
+    transition: .2s;
+
+}
+.btnCon:hover{
+    transform: scale(1.05);
+}

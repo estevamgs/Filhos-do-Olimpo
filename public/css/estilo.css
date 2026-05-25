@@ -492,7 +492,7 @@ body::before{
     box-shadow: 0 0 15px rgba(0,191,255,.25);
 }
 .btnPersonagens:hover{
-  transform: scale(1.02);
+  transform: scale(1.05);
 }
 
 /* FOOTER */
