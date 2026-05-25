@@ -1,3 +1,23 @@
+/* Tema deuses */
+body.poseidon .textos p{
+    color:#e8dcc5
+}
+body.poseidon .textos2 p{
+    color:#e8dcc5
+}
+body.hades .textos p{
+    color:#e8dcc5
+}
+body.hades .textos2 p{
+    color:#e8dcc5
+}
+body.zeus .textos p{
+    color:#e8dcc5
+}
+body.zeus .textos2 p{
+    color:#e8dcc5
+}
+/* Tema deuses */
 html, body{
     height: 100%;
     margin: 0;
