@@ -10,7 +10,6 @@ CREATE TABLE usuario (
     nome VARCHAR(50),
     email VARCHAR(50),
     senha VARCHAR(50),
-    cpf CHAR(11) UNIQUE NOT NULL,
     fk_deuses INT,
     FOREIGN KEY (fk_deuses) REFERENCES deuses(id)
 );
