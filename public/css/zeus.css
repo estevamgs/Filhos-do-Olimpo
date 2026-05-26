@@ -1,0 +1,227 @@
+/* Tema deuses */
+body.poseidon .textos p{
+    color:#e8dcc5
+}
+body.poseidon .textos2 p{
+    color:#e8dcc5
+}
+body.hades .textos p{
+    color:#e8dcc5
+}
+body.hades .textos2 p{
+    color:#e8dcc5
+}
+body.zeus .textos p{
+    color:#e8dcc5
+}
+body.zeus .textos2 p{
+    color:#e8dcc5
+}
+/* Tema deuses */
+html, body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: 'Cinzel', serif;
+}
+.contZeus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 180px 120px 120px;
+    background-image: url('../assets/imgs/zeusFundo.jpeg');
+    background-size: 100% 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+.imgZeus img{
+    width: 420px;
+    height: 620px;
+    object-fit: cover;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+}
+.infoZeus{
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+.tituloZeus h3{
+    display: flex;
+    align-items: center;
+    font-size: 64px;
+    color: #f5e6c8;
+    gap: 15px;
+    text-align: center;
+}
+.tituloZeus h3{
+    font-size: 38px;
+    width: 500px;
+    margin-bottom: 475px;
+    margin-right: -800px;
+    margin-left: 75px;
+}
+.textos{
+    width: 100%;
+}
+.textos p{
+    width: 100%;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #e8dcc5;
+    text-align: justify;
+}
+.contZeus2{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 80px;
+    padding: 180px 120px 120px;
+    background-image: url('../assets/imgs/zeusFundo.jpeg');
+    background-size: 100% 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+.imgZeus2 img{
+    display: flex;
+    justify-content: right;
+    width: 550px;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+}
+.infoZeus2{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: left;
+}
+.tituloZeus2 h3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 54px;
+    margin-bottom: 30px;
+    color: #f5e6c8;
+}
+.tituloZeus2 img{
+    width: 70px;
+}
+.textos2 p{
+    font-size: 22px;
+    color: #e8dcc5;
+    text-align: justify;
+}
+.tituloZeus3 h3{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 50px;
+    margin-bottom: 30px;
+    color: #f5e6c8;
+}
+.imgZeus3 img{
+    margin-top: 75px;
+    display: flex;
+    justify-content: right;
+    width: 650px;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
+}
+.tituloZeus img{
+    width: 50px;
+    margin-bottom: 15px;
+}
+.contZeus{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 180px 120px 120px;
+    background-image: url('../assets/imgs/zeusFundo.jpeg');
+    background-size: 100% 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+.textos{
+    width: 80%;
+    font-size: 20px;
+    color: #e8dcc5;
+    text-align: justify;
+    gap: 20px;
+    margin-top: 50px;
+    margin-right: 150px;
+}
+.imgZeus img{
+    width: 420px;
+    height: 620px;
+    object-fit: cover;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(255, 238, 0, 0.623);
+
+}
+.contZeus2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    padding: 180px 120px 120px;
+    background-image: url('../assets/imgs/zeusFundo.jpeg');
+    background-size: 100% 950px;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 10;
+}
+.imgZeus2 img{
+    width: 420px;
+    height: 620px;
+    object-fit: cover;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(255, 238, 0, 0.623);
+}
+.imgZeus3 img{
+    width: 820px;
+    object-fit: cover;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(255, 238, 0, 0.623);
+}
+.btnCon{
+    margin-top: 50px;
+    background: #ffd900ad;
+    box-shadow: 0 0 15px #ffd9008a;
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 14px;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'Cinzel', serif;
+    font-weight: 700;
+    transition: .2s;
+}
+.btnCon:hover{
+    transform: scale(1.05);
+}
