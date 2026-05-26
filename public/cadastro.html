@@ -17,7 +17,6 @@
 </head>
 
 <body>
-  <!--header inicio-->
   <div class="header transparente">
     <div class="container">
       <h1 class="titulo">
@@ -43,10 +42,6 @@
           Cadastre-se
         </h2>
         <div class="formulario">
-          <!--
-                         Para inserir mais um campo, copie uma das inputs abaixo.
-                         Assim que inserir vá para o script abaixo.
-                     -->
           <div class="campo">
             <span>Nome:</span>
             <input id="nome_input" type="text" placeholder="Seu nome" />
@@ -91,18 +86,13 @@
 
 </html>
 <script>
-  // Array para armazenar empresas cadastradas para validação de código de ativação 
   function cadastrar() {
-    // aguardar();
-    //Recupere o valor da nova input pelo nome do id
-    // Agora vá para o método fetch logo abaixo
     var nomeVar = nome_input.value;
     var emailVar = email_input.value;
     var deusesVar = sel_deuses.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
     var deusesVincular
-    // Verificando se há algum campo em branco
     if (
       nomeVar == "" ||
       emailVar == "" ||
@@ -111,7 +101,7 @@
     ) {
       cardErro.style.display = "block";
       mensagem_erro.innerHTML =
-        "(Mensagem de erro para todos os campos em branco)";
+        "(Preencha todos os campos!)";
       finalizarAguardar();
       return false;
     } else {
@@ -215,7 +205,6 @@
 
     return false;
   }
-  // Listando empresas cadastradas 
   function sumirMensagem() {
     cardErro.style.display = "none";
   }

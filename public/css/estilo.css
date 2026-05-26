@@ -626,7 +626,9 @@ body::before{
 }
 
 #div_erros_login {
-  display: none
+  display: none;
+  font-size: 18px;
+  color: #FF0000;
 }
 
 /* FORMULARIO */
@@ -638,12 +640,12 @@ body::before{
 
 .card_erro {
   display: none;
-  background-color: #fff;
-  color: black;
+  background-color: rgb(19, 64, 116, 0.4);
+  color: white;
   width: 230px;
   position: fixed;
   border-radius: 4px;
-  border: #ED145B 3px solid;
+  border: rgb(19, 64, 116, 0.4) 3px solid;
   padding: 10px;
   margin-right: 10%;
 }
@@ -753,4 +755,8 @@ input{
   50%  {transform: rotate(25deg)}
   75%  {transform: rotate(-25deg)}
   100% {transform: rotate(25deg)}
+}
+
+a {
+  text-decoration: none;
 }

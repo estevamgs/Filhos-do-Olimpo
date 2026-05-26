@@ -25,21 +25,21 @@ html, body{
     color: white;
     font-family: 'Cinzel', serif;
 }
-.contHades{
+.contPoseidon{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/hadesFundo.jpeg');
+    background-image: url('../assets/imgs/poseidonFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
 }
-.imgHades img{
+.imgPoseidon img{
     width: 420px;
     height: 620px;
     object-fit: cover;
@@ -47,7 +47,7 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
 }
-.infoHades{
+.infoPoseidon{
     width: 700px;
     display: flex;
     flex-direction: column;
@@ -55,7 +55,7 @@ html, body{
     align-items: center;
     gap: 35px;
 }
-.tituloHades h3{
+.tituloPoseidon h3{
     display: flex;
     align-items: center;
     font-size: 64px;
@@ -63,7 +63,7 @@ html, body{
     gap: 15px;
     text-align: center;
 }
-.tituloHades h3{
+.tituloPoseidon h3{
     font-size: 38px;
     width: 500px;
     margin-bottom: 475px;
@@ -80,7 +80,7 @@ html, body{
     color: #e8dcc5;
     text-align: justify;
 }
-.contHades2{
+.contPoseidon2{
     width: 100%;
     min-height: 100vh;
     display: flex;
@@ -88,14 +88,14 @@ html, body{
     align-items: flex-start;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/hadesFundo.jpeg');
+    background-image: url('../assets/imgs/poseidonFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
 }
-.imgHades2 img{
+.imgPoseidon2 img{
     display: flex;
     justify-content: right;
     width: 550px;
@@ -103,14 +103,14 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
 }
-.infoHades2{
+.infoPoseidon2{
     width: 55%;
     display: flex;
     flex-direction: column;
     gap: 30px;
     text-align: left;
 }
-.tituloHades2 h3{
+.tituloPoseidon2 h3{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -118,7 +118,7 @@ html, body{
     margin-bottom: 30px;
     color: #f5e6c8;
 }
-.tituloHades2 img{
+.tituloPoseidon2 img{
     width: 70px;
 }
 .textos2 p{
@@ -126,7 +126,7 @@ html, body{
     color: #e8dcc5;
     text-align: justify;
 }
-.tituloHades3 h3{
+.tituloPoseidon3 h3{
     display: flex;
     align-items: center;
     gap: 15px;
@@ -134,7 +134,7 @@ html, body{
     margin-bottom: 30px;
     color: #f5e6c8;
 }
-.imgHades3 img{
+.imgPoseidon3 img{
     margin-top: 75px;
     display: flex;
     justify-content: right;
@@ -143,18 +143,18 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(201, 164, 92, 0.15);
 }
-.tituloHades img{
+.tituloPoseidon img{
     width: 50px;
     margin-bottom: 15px;
 }
-.contHades{
+.contPoseidon{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/hadesFundo.jpeg');
+    background-image: url('../assets/imgs/poseidonFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
@@ -170,37 +170,30 @@ html, body{
     margin-top: 50px;
     margin-right: 150px;
 }
-.imgHades img{
+.imgPoseidon img{
     width: 420px;
     height: 620px;
     object-fit: cover;
     border: 3px solid rgba(201, 164, 92, 0.15);
     border-radius: 22px;
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.432);
+    box-shadow: 0 0 30px rgba(0, 47, 255, 0.432);
+
 }
-.contHades2{
+.contPoseidon2{
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 80px;
     padding: 180px 120px 120px;
-    background-image: url('../assets/imgs/hadesFundo.jpeg');
+    background-image: url('../assets/imgs/poseidonFundo.jpeg');
     background-size: 100% 950px;
     background-position: center;
     background-repeat: no-repeat;
     position: relative;
     z-index: 10;
 }
-.imgHades2 img{
-    width: 420px;
-    height: 620px;
-    object-fit: cover;
-    border: 3px solid rgba(201, 164, 92, 0.15);
-    border-radius: 22px;
-    box-shadow: 0 0 30px rgba(255, 0, 0, 0.432);
-}
-.imgHades3 img{
+.imgPoseidon2 img{
     width: 420px;
     height: 620px;
     object-fit: cover;
@@ -208,10 +201,17 @@ html, body{
     border-radius: 22px;
     box-shadow: 0 0 30px rgba(0, 47, 255, 0.432);
 }
+.imgPoseidon3 img{
+    width: 820px;
+    object-fit: cover;
+    border: 3px solid rgba(201, 164, 92, 0.15);
+    border-radius: 22px;
+    box-shadow: 0 0 30px rgba(0, 47, 255, 0.432);
+}
 .btnCon{
     margin-top: 50px;
-    background: #ff00007c;
-    box-shadow: 0 0 15px #FF0000;
+    background: #00bfff54;
+    box-shadow: 0 0 15px #001aff73;
     display: inline-block;
     padding: 12px 30px;
     border-radius: 14px;
@@ -219,6 +219,7 @@ html, body{
     text-decoration: none;
     font-size: 22px;
     font-family: 'Cinzel', serif;
+    font-weight: 700;
     transition: .2s;
 }
 .btnCon:hover{
