@@ -92,78 +92,53 @@
     var deusesVar = sel_deuses.value;
     var senhaVar = senha_input.value;
     var confirmacaoSenhaVar = confirmacao_senha_input.value;
-    var deusesVincular
-    if (
-      nomeVar == "" ||
-      emailVar == "" ||
-      senhaVar == "" ||
-      confirmacaoSenhaVar == ""
-    ) {
-      cardErro.style.display = "block";
-      mensagem_erro.innerHTML =
-        "(Preencha todos os campos!)";
-      finalizarAguardar();
+
+    // Verifica campos obrigatórios
+    if (!nomeVar || !emailVar || !senhaVar || !confirmacaoSenhaVar) {
+      mostrarErro("(Preencha todos os campos!)");
       return false;
     } else {
       setInterval(sumirMensagem, 5000);
     }
 
     let num = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-    let especiais = ['!', '@', '#', '$', '%', '&', '*']
-
-    if (nomeVar.length <= 1) {
-      cardErro.style.display = "block";
-      mensagem_erro.innerHTML = "(Nome deve conter mais que 1 caracter)";
-      finalizarAguardar();
-    } else if (nomeVar.length >= 2) {
-      
-      // for (let i = 0; i < num.length; i++) {
-     
-      //   if (isNaN(lista[i]))
-
-      // }
-      
-      for (let o = 0; o < num.length; o++) {
-        if (nomeVar.includes(num[o])) {
-          cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(Nome não deve conter números)";
-          finalizarAguardar();
-          break
-        }
+    let especiais = ['!', '@', '#', '$', '%', '&', '*'];
+    if (nomeVar.length <= 3) {
+      mostrarErro("(Nome deve conter mais que 3 caracter)");
+      return false;
+    }
+    for (let i = 0; i < num.length; i++) {
+      if (nomeVar.includes(num[i])) {
+        mostrarErro("(Nome não deve conter números)");
+        return false;
       }
       for (let e = 0; e < especiais.length; e++) {
         if (nomeVar.includes(especiais[e])) {
-          cardErro.style.display = "block";
-          mensagem_erro.innerHTML = "(Nome não deve conter caractéres especiais)";
-          finalizarAguardar();
-          break
+          mostrarErro("(Nome não deve conter caracteres especiais)");
+          return false;
         }
       }
     }
-    for (let i = 0; i < 1; i++) {
-      if (!(emailVar.includes('@') && emailVar.includes('.'))) {
-        cardErro.style.display = "block";
-        mensagem_erro.innerHTML = "(E-Mail deve conter '@' e '.')";
-        finalizarAguardar();
-
-      }
+    
+    if (!(emailVar.includes('@') && emailVar.includes('.'))) {
+      mostrarErro("(E-Mail deve conter '@' e '.')");
+      return false;
     }
-    for (let i = 0; i < 1; i++) {
-      if (senhaVar.length <= 6) {
-        cardErro.style.display = "block";
-        mensagem_erro.innerHTML = "(Senha deve conter mais do que 6 caracteres)";
-        finalizarAguardar();
-
-      }
+    if (senhaVar.length <= 6) {
+      mostrarErro("(Senha deve conter mais do que 6 caracteres)");
+      return false;
     }
-    for (let i = 0; i < 1; i++) {
-      if (confirmacaoSenhaVar != senhaVar) {
-        cardErro.style.display = "block";
-        mensagem_erro.innerHTML = "(As senhas devem coincidir)";
-        finalizarAguardar();
-
-      }
+    if (confirmacaoSenhaVar !== senhaVar) {
+      mostrarErro("(As senhas devem coincidir)");
+      return false;
     }
+    console.log("Cadastro válido!");
+
+  function mostrarErro(msg) {
+    cardErro.style.display = "block";
+    mensagem_erro.innerHTML = msg;
+    finalizarAguardar();
+  }
     // Enviando o valor da nova input
     fetch("/usuarios/cadastrar", {
       method: "POST",
@@ -186,7 +161,7 @@
           cardErro.style.display = "block";
 
           mensagem_erro.innerHTML =
-            "Cadastro realizado com sucesso! Redirecionando para tela de Login...";
+            "Cadastro realizado com sucesso!<br><br>Redirecionando para tela de Login...";
 
           setTimeout(() => {
             window.location = "./login.html";

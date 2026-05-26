@@ -219,6 +219,7 @@ html, body{
     text-decoration: none;
     font-size: 22px;
     font-family: 'Cinzel', serif;
+    font-weight: 700;
     transition: .2s;
 }
 .btnCon:hover{
