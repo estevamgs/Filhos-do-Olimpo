@@ -44,7 +44,13 @@ Cada personagem possui:
 - 🌿 **Grover Underwood**  
 
 ---
+## 🏛️ Deuses Presentes
 
+- 🌊 **Poseidon**
+- 💀 **Hades**
+- ⚡ **Zeus**
+
+---
 ## ⚙️ Tecnologias Utilizadas
 
 ### 💻 Front-end
