@@ -72,6 +72,9 @@ html, body{
 }
 .textos{
     width: 100%;
+    border: 2px;
+    border-radius: 20px;
+    backdrop-filter: blur(120px);
 }
 .textos p{
     width: 100%;
@@ -125,6 +128,9 @@ html, body{
     font-size: 22px;
     color: #e8dcc5;
     text-align: justify;
+    border: 2px;
+    border-radius: 20px;
+    backdrop-filter: blur(120px);
 }
 .tituloHades3 h3{
     display: flex;
